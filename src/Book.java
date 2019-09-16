@@ -73,7 +73,7 @@ public class Book {
             System.out.println("Total price is "+totalprice);
 
         }else{
-            System.out.println("The stock is not empty.");
+            System.out.println("The price is not available now.");
         }
 
 
