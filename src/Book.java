@@ -5,6 +5,7 @@ public class Book {
     private double price;
     private Boolean isInStock;
 
+
     public Book() {
     }
 
@@ -66,17 +67,19 @@ public class Book {
         System.out.println(getDescription()+".");
     }
 
-    public void getTotalrice (int number){
+    public double getTotalrice (int number){
+        double totalprice=0;
 
-        if(getInStock()==true){
-            double totalprice= number*getPrice();
-            System.out.println("Total price is "+totalprice);
+        if(getInStock()){
+
+            totalprice= number*getPrice();
+
 
         }else{
-            System.out.println("The price is not available now.");
+            totalprice=0;
         }
 
-
+            return totalprice;
     }
 
 
